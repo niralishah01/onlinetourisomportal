@@ -7,18 +7,21 @@
     <body>
             <div class=login>
                 <form action="home.html">
-                <button class="btn" type="submit">Home</button>
+                    <button class="btn" type="submit">Home</button>
                 </form>  
-                <h1>Login Form</h1>
+                <h1>Login Your Account</h1>
                 <br/>
                 <img id="logo" src="images/userlogo.jpg"/>
                 <form action="userhome.html" method="POST">
-                <b><label for="user">Username</label></b>
-                <input type="text" id="user" name="user" placeholder="8 alphanumeric character"/>
-                <br/>
-                <label for="passwd">Password</label>  
-                <input type="password" id="passwd" name="passwd" placeholder="password"/><br/>
-                <input type="submit" class="button" name="submit" value="submit">
+                    <label for="user">Username</label>
+                    <input type="text" id="user" name="user" placeholder="enter your username"/>
+                    <br/>
+                    <label for="passwd">Password</label>  
+                    <input type="password" id="passwd" name="passwd" placeholder="enter your password"/><br/>
+                    <input type="submit" class="button" name="submit" value="login">
+                </form>
+                <form action="adminhome.html">
+                    <input type="submit" class="button" name="sub" value="login as admin">
                 </form>
                 <a href="#">Forgot Password?</a><br/>
                 <center>Not registerd yet??</center>
