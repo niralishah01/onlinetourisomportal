@@ -1,0 +1,72 @@
+body{
+    background-image: url("../images/bg1.jpg");
+}
+.login h1{
+    background-color: blue;
+    background-position: center;
+    text-align: center;
+    color: black;
+    opacity:1;
+
+}
+.login{
+    background-image: linear-gradient(to bottom, white, cyan);
+    float: right;
+    width: 300px;
+    padding: 25px;
+    margin: 25px;
+    color:black;
+}
+#logo{
+    float: center;
+    border-radius: 50%;
+    width: 100px;
+    height:100px;
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+input[type=text] ,input[type=password]{
+    width:inherit;
+    padding: 12px 20px;
+    margin: 8px 0;
+    opacity:0.3;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input[type=text]:focus,input[type=password]:focus{
+    opacity:1;
+    border:none;
+    background-color:lightgreen;
+}
+.btn{
+    background-color: white;
+    width: 250px;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 3px;    
+}
+.btn:hover{
+    background-color:lightgray;
+    color:cornsilk;
+    font-weight: bold;
+}
+.button{
+    background-color: white;
+    width:fit-content;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 1px;    
+}
+.button:hover{
+    background-color: forestgreen;
+    color:cornsilk;
+    font-weight: bold;
+}
