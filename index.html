@@ -2,26 +2,29 @@
 <html>
     <head>
         <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
     </head>
     <body>
-            <center>
-                <div id=login style="background-color: bisque;">
-                <h1>Login</h1>
+            <div class=login>
+                <form action="home.html">
+                <button class="btn" type="submit">Home</button>
+                </form>  
+                <h1>Login Form</h1>
                 <br/>
-                <img src="images/userlogo.jpg" width="150" height="150"/>
-                <form action="" method="POST">
-                <br/>Username:<input type="text" name="user" placeholder="8 alphanumeric characters" required/><br/>
-                <br/>Password:<input type="password" name="passwd" placeholder="password" required/><br/>
-                <br/><input type="submit" name="submit">
+                <img id="logo" src="images/userlogo.jpg"/>
+                <form action="userhome.html" method="POST">
+                <b><label for="user">Username</label></b>
+                <input type="text" id="user" name="user" placeholder="8 alphanumeric character"/>
+                <br/>
+                <label for="passwd">Password</label>  
+                <input type="password" id="passwd" name="passwd" placeholder="password"/><br/>
+                <input type="submit" class="button" name="submit" value="submit">
                 </form>
-                <a href="home.html">Home</a>
-                <br/><br/>
-                </div>
-            </center>
-            <footer>
-                <center>
-                    <marquee>&copy;Made By Nirali Shah</marquee>
-                </center>
-            </footer>
+                <a href="#">Forgot Password?</a><br/>
+                <center>Not registerd yet??</center>
+                <form action="register.html">
+                <button class="btn" type="submit">Sign Up</button>
+                </form>
+            </div>
     </body>
 </html>
