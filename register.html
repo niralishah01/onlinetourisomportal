@@ -2,28 +2,38 @@
 <html>
     <head>
         <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="css/register.css"/>
     </head>
     <body>
         <center>
-        <div id=reg style="background-color: bisque;">
-            <br/>
+        <div class="reg">
+            <form action="home.html">
+            <button class="btn" type="submit">Home</button>
+            </form>
             <h1>Registration</h1>
-            <form action="#" method="POST">
-                <br/>Name:<input type="text" name="name" required><br/>
-                <br/>City:<input type="text" name="ct" required><br/>
-                <br/>Email:<input type="email" name="eid" required><br/>
-                <br/>Mobile no:<input type="number" name="phone" required><br/>
-                <br/>Username:<input type="text" name="usr" required><br/>
-                <br/>Password:<input type="password" name="passwd" required><br/>
-                <br/>ReEnter Password:<input type="password" name="repasswd" required/><br/>
-                <br/><input type="button" value="submit"/><br/>
+            <form action="home.html" method="POST">
+                <label for="name">Name:</label><br/>
+                <input type="text" id="name" name="name" required><br/>
+                <label for="city">City:</label><br/>
+                <input type="text" id="city" name="ct" required><br/>
+                <label for="eid">Email:</label><br/>
+                <input type="email" id="eid" name="eid" required><br/>
+                <label for="phone">Mobile no:</label><br/>
+                <input type="text" id="phone" name="phone" required><br/>
+                <label for="usr">User:</label><br/>
+                <input type="text" id="usr" name="usr" required><br/>
+                <label for="passwd">Password:</label><br/>
+                <input type="password" id="passwd" name="passwd" required><br/>
+                <label for="repasswd">ReEnter Password:</label><br/>
+                <input type="password" id="repasswd" name="repasswd" required/><br/>
+                <input type="submit" class="button" value="submit"/><br/>
+            </form>
+            <br/>
+            <center>Already registered?? click below to login</center>
+            <form action="index.html">
+            <button class="btn" type="submit">Sign In</button>
             </form> 
         </div>
         </center>
-        <footer>
-            <center>
-              <marquee>&copy;Made By Nirali Shah</marquee>
-            </center>
-        </footer>
     </body>
 </html>
