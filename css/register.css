@@ -1,0 +1,68 @@
+body{
+    background-image: url("../images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reg h1{
+    background-color: blue;
+    background-position: center;
+    text-align: center;
+    color: white;
+    opacity:1;
+}
+.reg{
+    background-image: linear-gradient(to bottom, cyan,blue);
+    width: 300px;
+    padding: 25px;
+    margin: 25px;
+    color:black;
+    float: inherit;
+}
+label{
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+input[type=text] ,input[type=password],input[type=email]{
+    width:inherit;
+    align-self: ;
+    padding: 12px 20px;
+    margin: 8px 0;
+    opacity:0.3;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input[type=text]:focus,input[type=password]:focus{
+    opacity:1;
+    border:none;
+    background-color:lightgreen;
+}
+.btn{
+    background-color: white;
+    width: 250px;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 3px;    
+}
+.btn:hover{
+    background-color:lightgray;
+    color:cornsilk;
+    font-weight: bold;
+}
+.button{
+    background-color: white;
+    width:fit-content;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 1px;    
+}
+.button:hover{
+    background-color: forestgreen;
+    color:cornsilk;
+    font-weight: bold;
+}
