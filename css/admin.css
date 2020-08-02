@@ -1,0 +1,28 @@
+body{
+    background-image: url("../images/bg3.jpg");
+    text-align: center;
+}
+body h1{
+    text-shadow: ivory;
+    background-color: lightcoral;
+    width: fit-content;
+    float: center;
+}
+.admin{
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.button2{
+    background-color:bisque;
+    width: fit-content;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border-bottom: 5px double grey;
+    border-radius: 1px; 
+}
+.button2:hover{
+    background-color:blueviolet;
+    border: 1px dashed black;
+}
