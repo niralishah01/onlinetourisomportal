@@ -4,15 +4,16 @@
         <title>Registration</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/register.css"/>
+        <script type="text/javascript" src="js/ex2.js"></script>
     </head>
     <body>
         <center>
         <div class="reg">
-            <form action="home.html">
+            <form action="">
             <button class="btn" type="submit">Home</button>
             </form>
             <h1>Registration</h1>
-            <form action="home.html" method="POST">
+            <form action="home.html" method="POST" id="form1">
                 <label for="name">Name:</label><br/>
                 <input type="text" id="name" name="name" placeholder="your name" required><br/>
                 <label for="city">City:</label><br/>
@@ -27,7 +28,7 @@
                 <input type="password" id="passwd" name="passwd" placeholder="7 to 15 characters" required><br/>
                 <label for="repasswd">ReEnter Password:</label><br/>
                 <input type="password" id="repasswd" name="repasswd" required/><br/>
-                <input type="submit" class="button" value="submit"/><br/>
+                <input type="button" class="button" value="submit" onclick="details()"/><br/>
             </form>
             <br/>
             <center>Already registered?? click below to login</center>
@@ -35,6 +36,7 @@
             <button class="btn" type="submit">Sign In</button>
             </form> 
         </div>
+        <script type="text/javascript" src="js/ex2.js"></script>
         </center>
     </body>
 </html>

@@ -9,21 +9,50 @@
         <center><h1>Admin Panel</h1></center>
         <marquee><h2>Welcome Admin Nirali!!!</h2></marquee>
         <div class="admin">
-            <center><p>Users</p></center>
-            <table border="1px">
-                <tr>
+            <input class="button2" type="button" name="" value="Home" onclick="location.href='adminhome.html'"/><br/>
+            <input class="button2" type="button" name="" value="View Bookings" onclick="location.href='adminhome.html'"/><br/>
+            <input class="button2" type="button" name="" value="View Reviews" onclick="location.href='adminviewreviews.html'"/><br/>
+            <input class="button2" type="button" name="" value="View Requests" onclick="location.href='viewrequest.html'"/><br/>
+            <input class="active" class="button2" type="button" name="" value="View Users" onclick="location.href='viewusers.html'"/><br/>
+            <input class="button2" type="button" name="" value="Blocked Users" onclick="location.href='blockusers.html'"/><br/>
+            <input class="button2" type="button" name="" value="Accepted travels" onclick="location.href='acceptedrequests.html'"/><br/>
+            <input class="button2" type="button" name="" value="Declined requests" onclick="location.href='declinedrequest.html'"/><br/>
+        </div>
+        <div class="admin2">
+            <table border="1px" class="table" id="tbl">
+                <tr id="row0">
                     <th>SrNo.</th>
                     <th>Username</th>
                     <th>Name</th>
                     <th>..</th>
                 </tr>
-                <tr>
+                <tr id="row1">
                     <td>1</td>
-                    <td>abc12</td>
-                    <td>Abc</td>
-                    <td><input class="button2" type="button" name="" value="Block/Unlbock" onclick="location.href='adminhome.html'"/></td>
+                    <td>a1</td>
+                    <td>abc</td>
+                    <td><input class="button3" type="button" name="" value="Block" onclick="block(this)"/></td>
+                </tr>
+                <tr id="row2">
+                    <td>2</td>
+                    <td>ns1</td>
+                    <td>nirali</td>
+                    <td><input class="button3" type="button" name="" value="Block" onclick="block(this)"/></td>
+                </tr>
+                <tr id="row3">
+                    <td>3</td>
+                    <td>bs1</td>
+                    <td>bansari</td>
+                    <td><input class="button3" type="button" name="" value="Block" onclick="block(this)"/></td>
+                </tr>
+                <tr id="row4">
+                    <td>4</td>
+                    <td>x1</td>
+                    <td>xyz</td>
+                    <td><input class="button3" type="button" name="" value="Block" onclick="block(this)"/></td>
                 </tr>
             </table>
         </div>
+        <script src="js/ex1.js">
+        </script>
     </body>
 </html>

@@ -8,14 +8,19 @@ body h1{
     width: fit-content;
     float: center;
 }
+.admin2{
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 250px;
+}
 .admin{
     margin-top: 100px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 5px;
+    float: left;
 }
 .button2{
     background-color:bisque;
-    width: fit-content;
+    width: 120px;
     margin: 5px;
     padding:5px;
     text-align: center;
@@ -25,4 +30,29 @@ body h1{
 .button2:hover{
     background-color:blueviolet;
     border: 1px dashed black;
+    width: 150px;
+}
+.admin input.active{
+    background-color:red;
+    color: white;
+    width: 120px;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border-bottom: 5px double grey;
+    border-radius: 1px; 
+}
+.table{
+    background-image: linear-gradient(to bottom,lightgreen,orange);
+}
+.button3{
+    background-color: whitesmoke;
+    width: fit-content;
+    text-align: center;
+    border-bottom: 5px double grey;
+    border-radius: 4px;
+}
+.button3:hover{
+    background-color: salmon;
+    border: 1px solid black;
 }
