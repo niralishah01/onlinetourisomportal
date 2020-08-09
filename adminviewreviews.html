@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AdminHome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
+    </head>
+    <body>
+        <center><h1>Admin Panel</h1></center>
+        <marquee><h2>Welcome Admin Nirali!!!</h2></marquee>
+        <div class="admin">
+            <input class="button2" type="button" name="" value="Home" onclick="location.href='adminhome.html'"/><br/>
+            <input class="button2" type="button" name="" value="View Bookings" onclick="location.href='adminhome.html'"/><br/>
+            <input class="active" class="button2" type="button" name="" value="View Reviews" onclick="location.href='adminviewreviews.html'"/><br/>
+            <input class="button2" type="button" name="" value="View Requests" onclick="location.href='viewrequest.html'"/><br/>
+            <input class="button2" type="button" name="" value="View Users" onclick="location.href='viewusers.html'"/><br/>
+            <input class="button2" type="button" name="" value="Blocked Users" onclick="location.href='blockusers.html'"/><br/>
+            <input class="button2" type="button" name="" value="Accepted travels" onclick="location.href='acceptedrequests.html'"/><br/>
+            <input class="button2" type="button" name="" value="Declined requests" onclick="location.href='declinedrequest.html'"/><br/>
+        </div>
+        <div class="admin2">
+            <table border="1px" class="table" id="tbl">
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Name</th>
+                    <th>Visited Place</th>
+                    <th>Feedback</th>
+                    <th>Rating</th>
+                    <th>..</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>xyz</td>
+                    <td>Kerala</td>
+                    <td>Kerala is an awesome place and more than that the service provided by travels company
+                        was amazing!!I just loved this site for providing me such an amazing trip.
+                    </td>
+                    <td>5 star</td>
+                    <td><input class="button3" type="button" name="" value="delete" onclick="deletereview(this)"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>xyz</td>
+                    <td>Kerala</td>
+                    <td>Kerala is an awesome place and more than that the service provided by travels company
+                        was amazing!!I just loved this site for providing me such an amazing trip.
+                    </td>
+                    <td>5 star</td>
+                    <td><input class="button3" type="button" name="" value="delete" onclick="deletereview(this)"/></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>xyz</td>
+                    <td>Kerala</td>
+                    <td>Kerala is an awesome place and more than that the service provided by travels company
+                        was amazing!!I just loved this site for providing me such an amazing trip.
+                    </td>
+                    <td>5 star</td>
+                    <td><input class="button3" type="button" name="" value="delete" onclick="deletereview(this)"/></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>xyz</td>
+                    <td>Kerala</td>
+                    <td>Kerala is an awesome place and more than that the service provided by travels company
+                        was amazing!!I just loved this site for providing me such an amazing trip.
+                    </td>
+                    <td>5 star</td>
+                    <td><input class="button3" type="button" name="" value="delete" onclick="deletereview(this)"/></td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript" src="js/ex1.js"></script>
+    </body>
+</html>
