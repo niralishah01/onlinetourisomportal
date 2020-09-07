@@ -1,0 +1,10 @@
+.button2{
+    background-color: white;
+    width:fit-content;
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 1px;    
+}
+
