@@ -11,7 +11,7 @@ body{
     opacity:1;
 }
 .reg{
-    background-image: linear-gradient(to bottom, cyan,blue);
+    background-image: linear-gradient(to bottom, rgb(162, 0, 255),cyan);
     width: 300px;
     padding: 25px;
     margin: 25px;
@@ -26,14 +26,13 @@ label{
 }
 input[type=text] ,input[type=password],input[type=email]{
     width:inherit;
-    align-self: ;
     padding: 12px 20px;
     margin: 8px 0;
     opacity:0.3;
     border: none;
     border-bottom: 2px solid black;
 }
-input[type=text]:focus,input[type=password]:focus{
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{
     opacity:1;
     border:none;
     background-color:lightgreen;

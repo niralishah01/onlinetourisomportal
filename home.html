@@ -3,9 +3,9 @@
     <head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/nav.css"/>
         <link rel="stylesheet" type="text/css" href="css/style2.css"/>
-    </head>
     <body>
         <fieldset>
             <center>
@@ -19,15 +19,22 @@
                 <a href="register.html" style="float: right;">Sign-Up</a>
             </nav>
         </fieldset>
-        <div id="top">
-        <img src="images/th.jpg" width="100%" height="300px">
-        <!--searchbar-->
-        <form >
-            <input type="search" name="searchplaces" placeholder="search places here.." style="width: 90%;"/>
-            <input type="submit" value="search"/>
-        </form>
-        <p>serach result will be displayed here</p>
-        </div>
+        <div class="card bg dark text white w 25 mx auto">
+            <img src="images/th.jpg" width="100%" height="300px">
+            <div class="card-img-overlay">
+                <blockquote class="blockquote text-right" style="font-weight: bold;">
+                    <div class="card-text">
+                        Traveling – it leaves you speechless, then turns you into a storyteller.
+                    </div>
+                    <footer class="blockquote-footer">Ibn Battuta</footer>
+                </blockquote>
+            </div></div>
+            <!--searchbar-->
+            <form >
+                <input type="search" name="searchplaces" placeholder="search places here.." style="width: 90%;"/>
+                <input class="btn btn-outline-secondary" type="submit" value="search" style="display: inline-block;"/>
+            </form>
+            <p>serach result will be displayed here</p>
         <section>
             <center>
                 <h3 style="text-shadow: black; color: red;">Explore India</h3>
