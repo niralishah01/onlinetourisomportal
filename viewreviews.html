@@ -3,14 +3,16 @@
     <head>
         <title>Feedback</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/nav.css"/>
     </head>
     <body>
         <fieldset>
             <marquee><h1>Welcome to Tourism Portal!!!</h1></marquee>
             <nav class="topnav">
-                <a href="home.html">Home</a>
-                <a href="viewreviews.html" class="active">Feedback</a>
+                <a href="userhome.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="#" class="active">Feedback</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="index.html" style="float: right;">Sign-In</a>
                 <a href="register.html" style="float: right;">Sign-Up</a>
@@ -20,14 +22,14 @@
         <img src="images/th.jpg" width="100%" height="300px">
         </div>
             <h1>Feedback</h1>
-            <a href="givefeedback.html">Give Feedback here.</a>
-            <p>This link will be available only if user is already logged in.</p><br/>
-            <p>Here are some feedbacks provided by customers who have plan their trip using 
+            <a href="givefeedback.html" class="btn btn-outline-secondary">Give Feedback here.</a><br/>
+            <cite>This link will be available only if user is already logged in.</cite><br/><br/>
+            <p class="lead">Here are some feedbacks provided by customers who have plan their trip using 
                 this website. You can view their experiences of trips. We welcome feedbacks from user as user satisfaction 
                 is our first priority.
             </p>
         </fieldset>
-            <table border="1px">
+            <table border="1px" class="table">
                 <tr>
                     <th>Sr.No.</th>
                     <th>Name</th>
