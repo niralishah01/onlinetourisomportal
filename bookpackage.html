@@ -27,42 +27,43 @@
             </blockquote>
         </div></div>
         <div class="container">
-            <button type="button" class="btn btn-outline-primary" data-toggle="collapse" data-target="#formd">Book Package</button>
-            <center><form class="was-validated">
-                <div class="form-group">
-                <table id="formd" class="table-bordered collapse">
+            <button type="button" id="book" class="btn btn-outline-primary" data-toggle="collapse" data-target="#formd">Book Package</button>
+            <center><form class="was-validated" id="form1">
+                <br/><br/>
+            <div class="form-group collapse" id="formd">
+                <table id="pkg" class="table-bordered">
                     <tr class="table-info">
                         <td colspan="2"><center>Personal Deatils</center></td>
                     </tr>
                     <tr>
                         <td>First Name:</td>
                         <td>
-                            <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+                            <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name" required>
                             <div class="invalid-feedback">Please fill out this field.</div>
                         </td>
                     </tr>
                     <tr>
                         <td>Last Name:</td>
                         <td>
-                            <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+                            <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" required>
                             <div class="invalid-feedback">Please fill out this field.</div>
                         </td>
                     </tr>
                     <tr>
                         <td>Username</td>
-                        <td><input type="text" name="username" class="form-control" placeholder="Username" required/>
+                        <td><input type="text" id="user" name="username" class="form-control" placeholder="Username" required/>
                             <div class="invalid-feedback">Please fill out this field.</div>
                         </td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td><input type="email" name="email" class="form-control" placeholder="Emailid" required>
+                        <td><input type="email" id="mail" name="email" class="form-control" placeholder="Emailid" required>
                             <div class="invalid-feedback">Please enter valid email ID.</div>
                         </td>
                     </tr>
                     <tr>
                         <td>Mobile no:</td>
-                        <td><input type="text" name="phone" class="form-control" placeholder="Contact no." required>
+                        <td><input type="text" id="phn" name="phone" class="form-control" placeholder="Contact no." required>
                             <div class="invalid-feedback">Please fill out this field.</div>
                         </td>
                     </tr>
@@ -71,7 +72,7 @@
                     </tr>
                     <tr>
                         <td>Package Name:</td>
-                        <td><input type="text" name="pkgname" class="form-control" placeholder="Package Name" required/>
+                        <td><input type="text" id="pkgname" name="pkgname" class="form-control" placeholder="Package Name" required/>
                             <div class="invalid-feedback">Please fill out this field.</div>
                         </td>
                     </tr>
@@ -79,17 +80,17 @@
                         <td>Travelling Mode:</td>
                         <td>
                             <div class="form-check-inline">
-                                <input type="radio" class="form-check-input" name="ac" value="ac">AC
+                                <input type="radio" class="form-check-input" name="travel" value="AC">AC
                             </div>
                             <div class="form-check-inline">
-                                <input type="radio" class="form-check-input" name="nonac" value="nonac">Non-AC
+                                <input type="radio" class="form-check-input" name="travel" value="Non AC">Non-AC
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td>Select suitable date from available:</td>
                         <td>
-                            <select class="form-control">
+                            <select class="form-control" id="date">
                                 <option>Select Date</option>
                                 <option>1/12/2020</option>
                                 <option>20/12/2020</option>
@@ -100,12 +101,61 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><center><button type="button" class="btn btn-success" >Book</button></center></td>
+                        <td>No. Of Persons</td>
+                        <td><input type="text" id="people" name="people" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" id="submit" class="btn btn-success" >Book</button></td>
                     </tr>
                 </table>
                 </div>
-            </form>
+            </form></center>
         </div>
+        <section class="card-deck">
+        <div id="details1" class="card" style="display: none;">
+            <div class="card-header">
+                <div class="card-title">
+                <h4>Booking Details</h4>
+                </div>
+            </div>
+            <div id="booking" class="card-body">
+            </div>
+            <div class="card-footer">
+                <button type="button" id="pay" class="btn btn-dark">Payment</button>
+            </div>
+        </div>
+        <div id="paymentdetails" class="card" style="width: 500px; display: none;">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>Payment Details</h4>
+                </div>
+            </div>
+            <div id="payment" class="card-body text-center">
+                <form class="form-group" id="form2">
+                    <label for="pay-option" class="form-check-label">Payment mode:</label><br/>
+                    <input type="radio" id="pay-option" class="form-check-input" name="pay-option" value="Net Banking">Net Banking
+                    <br/><input type="radio" id="pay-option" class="form-check-input" name="pay-option" value="Debit/ATM Card">Debit/ATM Card
+                    <br/><button type="button" id="select" class="btn btn-dark">Select</button>
+                    <div id="usingcard">
+                        Name On Card:<input type="text" class="form-control" id="cardname" name="cardname"/><br/>
+                        Expiry Month:<input type="text" class="form-control" id="expmonth" name="expmonth"/>
+                        Expiry Year:<input type="text" class="form-control" id="expyear" name="expyear"/><br/>
+                        CVV:<input type="text" class="form-control" id="cvv" name="cvv"/><br/>
+                    </div>
+                    <div id="netbanking">
+                        <label for="bank">Select bank:</label>
+                        <br/><input type="radio" id="bank" class="form-check-input" name="bank" value="SBI">SBI
+                        <br/><input type="radio" id="bank" class="form-check-input" name="bank" value="ICICI">ICICI
+                        <br/><input type="radio" id="bank" class="form-check-input" name="bank" value="BOB">BOB
+                        <br/><input type="radio" id="bank" class="form-check-input" name="bank" value="Axis">Axis
+                    </div>
+                </form>
+            </div>
+            <div id="paymentfooter" class="card-footer">
+                <button type="button" id="redirecttopay" class="btn btn-dark">Pay</button>
+            </div>
+        </div>
+        </section>
         <footer>
             <center>
                 &copy;Made By Nirali Shah
@@ -116,5 +166,6 @@
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/confirmPkg_jquery.js"></script>
     </body>
 </html>
